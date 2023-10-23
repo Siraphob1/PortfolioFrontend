@@ -1,11 +1,12 @@
-
+import imgProfile  from '../image/profile.jpg'
 const IntroComponent = () => {
   return (
     <section className=" relative">
             {/* Background */}
             <div className=" w-full h-[90vh] overflow-hidden relative">
-                <div style={{backgroundImage: `url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2lhdnk4MmRqOGVydTExbm0xbThuNmFieTh1NjgyNjR4eXpsMG01dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26tn33aiTi1jkl6H6/giphy.gif")` 
-                            ,backgroundRepeat: 'no-repeat'                            
+                <div style={{backgroundImage: `url(${imgProfile})` 
+                            ,backgroundRepeat: 'no-repeat',
+                            backgroundPosition:'50% 15%'                            
                             }}
                         className=" w-[110%] h-[95vh] bg-cover bg-center  blur-[15px] absolute top-[-1rem] left-[-1rem] ">     
                 </div>
@@ -28,15 +29,14 @@ const IntroComponent = () => {
                                     Hi, I am 
                                     <span className=" text-yellow-400"> &ldquo;Top&rdquo;</span> or  
                                     <span className=" text-yellow-400"> &ldquo;Siraphob Reanmanorom.&rdquo; </span>
-                                    <br />A graduate in the field of Mechatronics engineering. 
-                                    <br />I love coding and find it enjoyable.
+                                    <br />Fan of anime where the protagonist learns everything around him and adapts his knowledge to fight monsters in another worlds.
                                 </p>
                             </div>
                         </section>            
 
                         {/* Right */}                
                         <section>
-                            <img src="https://1417094351.rsc.cdn77.org/articles/9940/9939350/thumbnail/large.gif?4" alt="" className=" w-[40vw] lg:w-[400px] rounded-full" />
+                            <img src={imgProfile} alt={`${imgProfile}`} className=" w-[40vw] lg:w-[400px] rounded-full" />
                         </section>
             </div>
     </section>
