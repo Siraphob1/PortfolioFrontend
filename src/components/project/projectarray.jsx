@@ -8,6 +8,7 @@ import image7_Fylodarktheme from '../../image/projects/Fylo dark theme landing p
 import image8_Colma from '../../image/projects/Colmar-Academy.png'
 import video9_ReactAssessmet from '../../image/projects/VideoFind your hat.mp4'
 import video10_ReactAssessmet from '../../image/projects/VideoReact Assessment.mp4'
+import video11_RUSHExcercise from '../../image/projects/videoRUSH.mp4'
 
 
 export const projectarray = [
@@ -130,5 +131,17 @@ export const projectarray = [
         isAPI:false,
         repoGithub:'https://github.com/Siraphob1/career-changer-react-assessment' ,
         linksite:'https://siraphob-react-assessment.vercel.app/'
+    },
+    {   id: 11, 
+        topic:'RUSH excercise',
+        stack:['ReactJS' ,'Vite' ,'Tailwind' , 'NodeJS' , 'ExpressJS' , 'MongoDB'],
+        responsive:['Desktop'],
+        image:video11_RUSHExcercise,
+        isgif:true,
+        isvideo:true,
+        isCRUD:true,
+        isAPI:true,
+        repoGithub:'https://github.com/Siraphob1/rush-excercise' ,
+        linksite:'https://rush-excercise.vercel.app'
     }
 ]
