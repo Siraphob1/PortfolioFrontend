@@ -14,6 +14,9 @@ const ProjectsComponent = () => {
   const [tailwindskill,setTailwindskill] = useState(false);
   const [crudskill , setCRUDskill] = useState(false);
   const [apiskill , setAPIskill] = useState(false);
+  const [nodeskill , setNodeskill] = useState(false);
+  const [expressskill , setExpressskill] = useState(false);
+  const [mongodbskill ,setMongodbskill] = useState(false);
 
   const [dataproject , setDataproject] = useState([])
 
@@ -25,9 +28,12 @@ const ProjectsComponent = () => {
     const filterTailwind = tailwindskill ? filterReactJS.filter((e)=> e.stack.includes("Tailwind")) : filterReactJS
     const filterCRUD = crudskill ? filterTailwind.filter((e)=> e.isCRUD) : filterTailwind
     const filterAPI = apiskill ? filterCRUD.filter((e)=> e.isAPI) : filterCRUD
-    setDataproject(filterAPI)
+    const filternode = nodeskill ? filterAPI.filter((e)=> e.stack.includes("NodeJS")) : filterAPI
+    const filterexpress = expressskill ? filternode.filter((e)=> e.stack.includes("ExpressJS")) : filternode
+    const filtermongodb = mongodbskill ? filterexpress.filter((e)=> e.stack.includes("MongoDB")) : filterexpress
+    setDataproject(filtermongodb)
     
-  },[htmlskill ,cssskill , jsskill , reactskill , tailwindskill , crudskill , apiskill])
+  },[htmlskill ,cssskill , jsskill , reactskill , tailwindskill , crudskill , apiskill , nodeskill , expressskill , mongodbskill])
 
   return (
     <LayoutComponent topic={'Projects'} idcomponent={'projects'} bgopacity={'bg-opacity-[90%]'}>
@@ -87,6 +93,27 @@ const ProjectsComponent = () => {
                     <section>            
                       <input id="apiskillfilter" type='checkbox' className="checkbox" value={apiskill} onChange={()=> setAPIskill(!apiskill)}/>
                       <label htmlFor="apiskillfilter">API</label>
+                    </section>
+                  </li>
+                  {/* NODEJS */}
+                  <li>
+                    <section>            
+                      <input id="nodeskillfilter" type='checkbox' className="checkbox" value={nodeskill} onChange={()=> setNodeskill(!nodeskill)}/>
+                      <label htmlFor="nodeskillfilter">NodeJS</label>
+                    </section>
+                  </li>
+                  {/* EXPRESSJS */}
+                  <li>
+                    <section>            
+                      <input id="expressskillfilter" type='checkbox' className="checkbox" value={expressskill} onChange={()=> setExpressskill(!expressskill)}/>
+                      <label htmlFor="expressskillfilter">ExpressJS</label>
+                    </section>
+                  </li>
+                  {/* MONGODB */}
+                  <li>
+                    <section>            
+                      <input id="mongoDBskillfilter" type='checkbox' className="checkbox" value={mongodbskill} onChange={()=> setMongodbskill(!mongodbskill)}/>
+                      <label htmlFor="mongoDBskillfilter">MongoDB</label>
                     </section>
                   </li>
 
