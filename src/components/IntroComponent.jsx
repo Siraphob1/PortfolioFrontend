@@ -33,7 +33,7 @@ const IntroComponent = () => {
                 &ldquo;Siraphob Reanmanorom.&rdquo;{" "}
               </span>
               <br />
-              I'm a full stack web developer
+              I'm a full stack developer
             </p>
           </div>
         </section>
