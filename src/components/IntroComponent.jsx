@@ -23,7 +23,7 @@ const IntroComponent = () => {
         <section className=" text-white flex  items-center justify-center mt-[2rem] lg:mt-0 lg:mr-[2rem]  ">
           <div className=" lg:w-[500px] ">
             <h1 className=" text-[8vw] sm:text-[6.5vw] md:text-[6vw]  lg:text-[3rem] font-bold mb-[0.5rem]">
-              Software-Engineer
+              Full Stack-Developer
             </h1>
             <p className=" lg:text-[1.2rem] font-Incluesive-Sans">
               Hi, I am
@@ -33,8 +33,7 @@ const IntroComponent = () => {
                 &ldquo;Siraphob Reanmanorom.&rdquo;{" "}
               </span>
               <br />
-              Fan of anime where the protagonist learns everything around him
-              and adapts his knowledge to fight monsters in another worlds.
+              I'm a full stack web developer
             </p>
           </div>
         </section>
