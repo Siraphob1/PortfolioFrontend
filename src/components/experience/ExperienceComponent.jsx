@@ -9,6 +9,19 @@ const ExperienceComponent = () => {
       bgopacity={"bg-opacity-[90%]"}
     >
       <ExperienceLayout
+        topic1={"Frontend Developer"}
+        topic2={""}
+        durationtime={"November 2023 - February 2024"}
+        addresslearn={"Online , Thailand"}
+      >
+        <p>
+          - Develop code and maintain web applications using React typescript
+        </p>
+        <p>- Collaborate with UI/UX designers</p>
+        <p>- Fix any website issues or bugs that arise</p>
+      </ExperienceLayout>
+
+      <ExperienceLayout
         topic1={"Generation Thailand"}
         topic2={""}
         durationtime={"July 2023 - October 2023"}
@@ -20,6 +33,12 @@ const ExperienceComponent = () => {
             Colmar Academy / Find your hat / React Assessment
           </span>
         </p>
+        <p>- Final Project: RUSH exercise</p>
+        <div className="pl-[1.5rem]">
+          <p>- use JWT for Signup / verify Email / Login / fetch API</p>
+          <p>- CRUD activity card</p>
+          <p>- use git & git hub work with a team</p>
+        </div>
       </ExperienceLayout>
 
       <ExperienceLayout
